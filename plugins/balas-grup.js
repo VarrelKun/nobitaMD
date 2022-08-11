@@ -14,7 +14,7 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
 
     let korban = `${number}`
     var nomor = m.sender
-    let spam1 = `「 *KANNA* 」\n\nDari : Owner\nKe : ${korban}@g.us\nPesan : ${pesan}\n\n${global.wm}`
+    let spam1 = `「 *GOPALASU* 」\n\nDari : Owner\nKe : ${korban}@g.us\nPesan : ${pesan}\n\n${global.wm}`
 
     await conn.reply(korban + '@g.us', spam1, 0, {
     contextInfo: { mentionedJid: [m.sender],
