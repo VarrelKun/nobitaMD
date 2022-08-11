@@ -14,7 +14,7 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
 
     let korban = `${number}`
     var nomor = m.sender
-    let spam1 = `「 *FUZEBOT* 」\n\nDari : Owner\nKe : wa.me/${korban}\nPesan : ${pesan}\n\n${global.wm}`
+    let spam1 = `「 *GOPALASU* 」\n\nDari : Owner\nKe : wa.me/${korban}\nPesan : ${pesan}\n\n${global.wm}`
 
     await conn.reply(korban + '@s.whatsapp.net', spam1, 0, {
     contextInfo: { mentionedJid: [m.sender],
@@ -24,7 +24,7 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
     title: global.wm, 
     body: 'Hai,Ini Balasan Pesan Dari Owner',  
     sourceUrl: sgc, 
-    thumbnail: fs.readFileSync('../thumbnail.jpg')
+    thumbnail: fs.readFileSync('./thumbnail.jpg')
       }}
      })    
 
