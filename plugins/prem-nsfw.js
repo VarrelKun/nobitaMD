@@ -27,15 +27,15 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 
 //> Default
 let res = 'https://api.lolhuman.xyz/api/random/nsfw/'
-let api = '?apikey=a70fe5fb01ea65b6bb350009'
+let api = '?apikey=e54205a4ca2caa368cc067bb'
 
 //> Lolhuman
 let resl = 'https://api.lolhuman.xyz/api/random2/'
-let apil = '?apikey=a70fe5fb01ea65b6bb350009'
+let apil = '?apikey=8e66d0934cf741bfd2182c16'
 
 //> Xteam
 let xres = 'https://api.lolhuman.xyz/api/random2'
-let xapi = '?apikey=a70fe5fb01ea65b6bb350009'
+let xapi = '?apikey=ebb6251cc00f9c63'
 //--------------------------------
 
 // ••••••••••••••••• OPTIONS •••••••••••
