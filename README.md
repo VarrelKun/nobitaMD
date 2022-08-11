@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://telegra.ph/file/4bcad8eb70af16e75aaba.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
+    <img src="https://telegra.ph/file/a258f3e6072ddca8f535c.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
 <h1 align="center">FUZEBOT - MD - V3</h1>
 <p align="center">
