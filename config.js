@@ -48,7 +48,7 @@ global.sig = 'https://instagram.com/fuze.page'
 global.sgh = 'https://github.com/VarrelKun'
 global.sgc = 'https://FuzePage.my.id'
 global.sdc = 'https://discord.io/FuzePage'
-global.snh = '-'
+global.snh = 'https://FuzePage.my.id'
 
 /*============== PAYMENT ==============*/
 global.pdana = '085954184111'
@@ -125,8 +125,8 @@ global.author = global.wm
 
 
 /*============== LOGO ==============*/
-global.thumb = 'https://telegra.ph/file/5444accedcd06f172899d.jpg' //Main Thumbnail
-global.thumb2 = 'https://telegra.ph/file/5444accedcd06f172899d.jpg'
+global.thumb = 'https://telegra.ph/file/a258f3e6072ddca8f535c.jpg' //Main Thumbnail
+global.thumb2 = 'https://telegra.ph/file/a258f3e6072ddca8f535c.jpg'
 global.thumbbc = 'https://telegra.ph/file/d389f4acafac741f6592c.jpg' //For broadcast
 global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
 
