@@ -1,34 +1,34 @@
 <p align="center">
     <img src="https://telegra.ph/file/4bcad8eb70af16e75aaba.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
-<h1 align="center">KannaBOT - MD - V2</h1>
+<h1 align="center">FUZEBOT - MD - V3</h1>
 <p align="center">
-  <a href="https://github.com/Jikarinka"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=Kanna+BOT+Multi+Device;Base+ori+by+BochilGaming;Recode+By+Letta;Re-Recode+By+Jikarinka;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="UwU">
+  <a href="https://github.com/VarrelKun"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=FUZE+BOT+Multi+Device;Base+ori+by+BochilGaming;Recode+By+Letta;Re-Recode+By+Jikarinka;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="UwU">
 </p>
 
 <p align="center">
- <a href="#"><img title="KannaBOT" src="https://img.shields.io/badge/Kanna BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+ <a href="#"><img title="FUZEBOT" src="https://img.shields.io/badge/Kanna BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/Jikarinka"><img title="Author" src="https://img.shields.io/badge/AUTHOR-Kanna-blue.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/VarrelKun"><img title="Author" src="https://img.shields.io/badge/AUTHOR-Kanna-blue.svg?style=for-the-badge&logo=github"></a>
 </p>
 ---------
 ## ```Connect With Me 📞``` <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="32px">
-  <a href="https://wa.me/6285334930628">
+  <a href="https://wa.me/6285954184111">
     <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
   </a> &nbsp;&nbsp;
-  <a href="https://www.tiktok.com/@kyo.tang">
+  <a href="https://www.tiktok.com/@nxvalll">
     <img align="left" alt="SIEGRIN | Titkok" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Tiktok.svg" />
   </a> &nbsp;&nbsp;
-  <a href="https://www.instagram.com/kontol_elite/">
+  <a href="https://www.instagram.com/_lucxfvr">
     <img align="left" alt="SIEGRIN | Instagram" width="24px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Instagram.svg" />
   </a> &nbsp;&nbsp;
-  <a href="mailto: papamamaakupulang@gmail.com">
+  <a href="mailto: varrelkun@gmail.com">
     <img align="left" alt="SIEGRIN | Gmail" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Gmail.svg" />
   </a> &nbsp;&nbsp;
 ---------
 
-## ```Whatsapp``` <a href="https://wa.me/6285334930628"> <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
+## ```Whatsapp``` <a href="https://wa.me/6285954184111"> <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
 [![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6281336990781) 
 [![ONWER](https://img.shields.io/badge/Owner%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6285334930628) 
 [![GROUP OFFICIAL](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/FF1Bd1U0FHu42rfz6uplbn) 
