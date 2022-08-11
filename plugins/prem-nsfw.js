@@ -54,41 +54,41 @@ let xapi = '?apikey=a70fe5fb01ea65b6bb350009'
 //### *PREM* ###
 // let nsfww = (ch == true ? false : true)
 
-let ahegao = (ch == true ? false : false)
-let anal = (ch == true ? false : false)
+let ahegao = (ch == true ? false : true)
+let anal = (ch == true ? false : true)
 let ass = (ch == true ? false : true)
 let blowjob = (ch == true ? false : true)
 let cums = (ch == true ? false : true)
 let ecchi = (ch == true ? false : true)
-let ero = (ch == true ? false : false)
-let erofeet = (ch == true ? false : false)
-let erogirl = (ch == true ? false : false)
-let holoero = (ch == true ? false : false)
-let erokitsune = (ch == true ? false : false)
-let eroneko = (ch == true ? false : false)
+let ero = (ch == true ? false : true)
+let erofeet = (ch == true ? false : true)
+let erogirl = (ch == true ? false : true)
+let holoero = (ch == true ? false : true)
+let erokitsune = (ch == true ? false : true)
+let eroneko = (ch == true ? false : true)
 let eroyuri = (ch == true ? false : true)
 let feet = (ch == true ? false : true)
 let femdom = (ch == true ? false : true)
 let futanari = (ch == true ? false : true)
 let girlsolo = (ch == true ? false : true)
 let hentai = (ch == true ? false : true)
-let holo = (ch == true ? false : false)
+let holo = (ch == true ? false : true)
 let kitsune = (ch == true ? false : true)
 let kuni = (ch == true ? false : true)
 let loli = (ch == true ? false : true)
 let manga = (ch == true ? false : true)
-let milf = (ch == true ? false : false)
-let mstrb = (ch == true ? false : false)
-let neko = (ch == true ? false : false)
-let panties = (ch == true ? false : false)
+let milf = (ch == true ? false : true)
+let mstrb = (ch == true ? false : true)
+let neko = (ch == true ? false : true)
+let panties = (ch == true ? false : true)
 let pussy = (ch == true ? false : true)
 let oppai = (ch == true ? false : true)
 let spank = (ch == true ? false : true)
-let tentacles = (ch == true ? false : false)
-let thighs = (ch == true ? false : false)
+let tentacles = (ch == true ? false : true)
+let thighs = (ch == true ? false : true)
 let tits = (ch == true ? false : true)
 let trap = (ch == true ? false : true)
-let uniform = (ch == true ? false : false)
+let uniform = (ch == true ? false : true)
 let waifu = (ch == true ? false : true)
 let yaoi = (ch == true ? false : true)
 let yuri = (ch == true ? false : true)
@@ -122,12 +122,12 @@ const sections = [
 	//{title: `${ erofeet == true ? p:f}` + "E • Ero Feet", rowId: ".nsfw erofeet"},
 	{title: `${ erogirl == true ? p:f}` + "E • Ero Girl", rowId: ".nsfw erogirl"},
 	{title: `${ holoero == true ? p:f}` + "E • Ero Holo", rowId: ".nsfw holoero"},
-	//{title: `${ erokitsune == true ? p:f}` + "E • Ero Kitsune", rowId: ".nsfw erokitsune"},
-	//{title: `${ eroneko == true ? p:f}` + "E • Ero Neko", rowId: ".nsfw eroneko"},
-	//{title: `${ eroyuri== true ? p:f}` + "E • Ero Yuri", rowId: ".nsfw eroyuri"},
+	{title: `${ erokitsune == true ? p:f}` + "E • Ero Kitsune", rowId: ".nsfw erokitsune"},
+	{title: `${ eroneko == true ? p:f}` + "E • Ero Neko", rowId: ".nsfw eroneko"},
+	{title: `${ eroyuri== true ? p:f}` + "E • Ero Yuri", rowId: ".nsfw eroyuri"},
 	{title: `${ feet == true ? p:f}` + "F • Feet", rowId: ".nsfw feet"},
 	{title: `${ femdom == true ? p:f}` + "F • Femdom", rowId: ".nsfw femdom"},
-	//{title: `${ futanari == true ? p:f}` + "F • Futanari", rowId: ".nsfw futanari"},
+	{title: `${ futanari == true ? p:f}` + "F • Futanari", rowId: ".nsfw futanari"},
 	//{title: `${ girlsolo == true ? p:f}` + "G • Girl Solo", rowId: ".nsfw girlsolo"},
 	{title: `${ hentai == true ? p:f}` + "H • Hentai", rowId: ".nsfw hentai"},
 	{title: `${ holo == true ? p:f}` + "H • Holo", rowId: ".nsfw holo"},
@@ -144,7 +144,7 @@ const sections = [
 	//{title: `${ spank == true ? p:f}` + "S • Spank", rowId: ".nsfw spank"},
 	{title: `${ tentacles == true ? p:f}` + "T • Tentacles", rowId: ".nsfw tentacles"},
 	{title: `${ thighs == true ? p:f}` + "T • Thighs", rowId: ".nsfw thighs"},
-	//{title: `${ tits == true ? p:f}` + "T • Tits", rowId: ".nsfw tits"},
+	{title: `${ tits == true ? p:f}` + "T • Tits", rowId: ".nsfw tits"},
 	{title: `${ trap == true ? p:f}` + "T • Trap", rowId: ".nsfw trap"},
 	{title: `${ uniform == true ? p:f}` + "U • Uniform", rowId: ".nsfw uniform"},
 	{title: `${ waifu == true ? p:f}` + "W • Waifu", rowId: ".nsfw waifu"},
