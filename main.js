@@ -132,7 +132,7 @@ async function connectionUpdate(update) {
   }
   if (global.db.data == null) await loadDatabase()
   console.log(JSON.stringify(update, null, 4))
-  if (update.receivedPendingNotifications) conn.sendMessage(`6285828357727@s.whatsapp.net`, {text: '♨︎O̳K̳ B̳O̳T̳ B̳E̳R̳H̳A̳S̳I̳L̳ T̳E̳R̳H̳U̳B̳U̳N̳G̳' })
+  if (update.receivedPendingNotifications) conn.sendMessage(`6285954184111@s.whatsapp.net`, {text: '♨︎O̳K̳ B̳O̳T̳ B̳E̳R̳H̳A̳S̳I̳L̳ T̳E̳R̳H̳U̳B̳U̳N̳G̳' })
 }
 
 
