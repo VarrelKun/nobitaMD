@@ -74,7 +74,7 @@ ${rpg.emoticon(v)}${v}
 `.trim()).join('\n')}
 `.trim()
     let type = (args[0] || '').toLowerCase()
-    let count = Math.floor(isNumber(args[0]) ? Math.min(Math.max(parseInt(args[0]), 1), Number.MAX_SAFE_INTEGER) : 1000) * 1
+    let count = Math.floor(isNumber(args[0]) ? Math.min(Math.max(parseInt(args[0]), 1), Number.MAX_SAFE_INTEGER) : 1) * 1
     if (!(type in listCrate)) return m.reply(info)
     if (user[type] < count) return m.reply(`
 Your *${rpg.emoticon(type)}${type} crate* is not enough!, you only have ${user[type]} *${rpg.emoticon(type)}${type} crate*
