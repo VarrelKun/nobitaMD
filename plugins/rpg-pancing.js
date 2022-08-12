@@ -384,7 +384,8 @@ handler.command = /^(pancing)$/i
 handler.register = true
 handler.limit = true
 
-default module handler
+export default handler
+
 function clockString(ms) {
   let h = Math.floor(ms / 3600000)
   let m = Math.floor(ms / 60000) % 60
