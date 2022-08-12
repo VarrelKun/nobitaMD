@@ -21,6 +21,12 @@ const items = {
         iron: { 
         	money: 3000
         },
+        diamond: { 
+        	money: 20000
+        },
+        emerald: { 
+        	money: 30000
+        },
         legendary: {
             money: 15000
         }
