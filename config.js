@@ -186,7 +186,7 @@ global.rpg = {
       level: '📊',
       limit: '🎫',
       health: '❤️',
-      stamina: '🔋'
+      stamina: '🔋',
       exp: '✨',
       money: '💹',
       bank: '🏦',
