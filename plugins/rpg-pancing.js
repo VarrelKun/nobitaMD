@@ -1,4 +1,3 @@
-
 let handler = async (m, { conn,usedPrefix, command, text, args }) => {
        let user = global.db.data.users[m.sender]
        let pancingan = user.pancingan
@@ -379,16 +378,15 @@ let handler = async (m, { conn,usedPrefix, command, text, args }) => {
 }
 
 handler.help = ['pancing <type>']
-handler.tags = ['game']
+handler.tags = ['rpg']
 handler.command = /^(pancing)$/i
 handler.register = true
 handler.limit = false
 
 export default handler
 function clockString(ms) {
-  let h = Math.floor(ms / 3600000)
-  let m = Math.floor(ms / 60000) % 60
-  let s = Math.floor(ms / 1000) % 60
-  console.log({ms,h,m,s})
-  return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')
+  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+  return [h, ' H ', m, ' M ', s, ' S '].map(v => v.toString().padStart(2, 0)).join('')
 }
