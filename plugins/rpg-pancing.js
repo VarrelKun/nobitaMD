@@ -1,14 +1,14 @@
 const cooldown = 150000
 let handler = async (m, { usedPrefix }) => {
     let user = global.db.data.users[m.sender]
-    let timers = (cooldown - (new Date - user.lastmancing))
+    let timers = (cooldown - (new Date - user.lastmining))
     if (user.stamina < 70) return m.reply(`
-Requires at least 70 🔋Stamina for the mancing!!
+Requires at least 70 🔋Stamina for the fishing!!
 please buy 🔋Stamina first by typing *${usedPrefix}buy potion <quantity>*,
 and type *${usedPrefix}heal <quantity>* to use potions
 `.trim())
-     if (user.fishingrod  == 0) return m.reply('Mau mancing ga punya alat pancing🎣')
-    if (new Date - user.lastmancing <= cooldown) return m.reply(`
+     if (user.fishingrod  == 0) return m.reply('Mau fishing ga punya alat pancing🎣')
+    if (new Date - user.lastmining <= cooldown) return m.reply(`
 You're already fishing!!, please wait *ðŸ•${timers.toTimeString()}*
 `.trim())
     const rewards = reward(user)
@@ -19,7 +19,7 @@ You're already fishing!!, please wait *ðŸ•${timers.toTimeString()}*
         if (total) text += `\n*${global.rpg.emoticon(lost)}${lost}:* ${total}`
     }
  m.reply(text.trim())
-    user.lastmancing= new Date * 1
+    user.lastmining= new Date * 1
 }
 handler.help = ['fishing', 'mancing']
 handler.tags = ['rpg']
