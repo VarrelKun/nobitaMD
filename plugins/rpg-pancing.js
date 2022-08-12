@@ -6,11 +6,11 @@ let handler = async (m, { conn,usedPrefix, command, text, args }) => {
        let type = (args[0] || '').toLowerCase()
         switch (type) {
 	          case 'easy':
-                                  let __timers = (new Date - global.db.data.users[m.sender].lastfishing)
+                                  let __timers = (new Date - global.db.data.users[m.sender].lastmancingeasy)
                                   let _timers = (28800 - __timers)
                                   let timers = clockString(_timers) 
                                   if (pancingan == 0 || umpan == 0) return m.reply('*Kamu belum memiliki Pancingan dan Umpan, Silahkan beli dulu..*')
-                                  if (new Date - global.db.data.users[m.sender].lastfishing > 28800) {
+                                  if (new Date - global.db.data.users[m.sender].lastmancingeasy > 28800) {
                                   if (global.db.data.users[m.sender].pancingan > 1) {
                                   if (global.db.data.users[m.sender].umpan > 99) {
                                   let randomaku1 = `${Math.floor(Math.random() * 10)}`
@@ -92,17 +92,17 @@ let handler = async (m, { conn,usedPrefix, command, text, args }) => {
                                  setTimeout(() => {
                                  m.reply('_Sedang Memancing..._')
                                  }, 0) 
-                                 user.lastfishing = new Date * 1
+                                 user.lastmancingeasy = new Date * 1
                                  } else conn.reply(m.chat, 'Minimal umpan kamu *100* untuk memancing level mudah', m)
                             } else conn.reply(m.chat, 'Minimal pancingan kamu *Level 2* untuk memancing level mudah', m)
                        } else conn.reply(m.chat, `*Sepertinya Anda Sudah Lelah*\n*Silahkan Istirahat Sejenak Sekitar ${timers}*\n*Untuk Bisa Melanjutkan Memancing Lagi*`, m)
                  break
 	          case 'normal':
-                                  let __timerl = (new Date - global.db.data.users[m.sender].lastfishing)
+                                  let __timerl = (new Date - global.db.data.users[m.sender].lastmancingeasy)
                                   let _timerl = (28800 - __timerl)
                                   let timerl = clockString(_timerl) 
                                   if (pancingan == 0 || umpan == 0) return m.reply('*Kamu belum memiliki Pancingan dan Umpan, Silahkan beli dulu..*')
-                                  if (new Date - global.db.data.users[m.sender].lastfishing > 28800) {
+                                  if (new Date - global.db.data.users[m.sender].lastmancingeasy > 28800) {
                                   if (global.db.data.users[m.sender].pancingan > 2) {
                                   if (global.db.data.users[m.sender].umpan > 149) {
                                   let randomakud1 = `${Math.floor(Math.random() * 50)}`
@@ -184,17 +184,17 @@ let handler = async (m, { conn,usedPrefix, command, text, args }) => {
                                  setTimeout(() => {
                                  m.reply('_Sedang Memancing..._')
                                  }, 0) 
-                                 user.lastfishing = new Date * 1
+                                 user.lastmancingeasy = new Date * 1
                                  } else conn.reply(m.chat, 'Minimal umpan kamu *150* untuk memancing level normal', m)
                             } else conn.reply(m.chat, 'Minimal pancingan kamu *Level 3* untuk memancing level normal', m)
                        } else conn.reply(m.chat, `*Sepertinya Anda Sudah Lelah*\n*Silahkan Istirahat Sejenak Sekitar ${timerl}*\n*Untuk Bisa Melanjutkan Memancing Lagi*`, m)
                  break 
 	          case 'hard':
-                                  let __timerh = (new Date - global.db.data.users[m.sender].lastfishing)
+                                  let __timerh = (new Date - global.db.data.users[m.sender].lastmancingeasy)
                                   let _timerh = (28800 - __timerh)
                                   let timerh = clockString(_timerh) 
                                   if (pancingan == 0 || umpan == 0) return m.reply('*Kamu belum memiliki Pancingan dan Umpan, Silahkan beli dulu..*')
-                                  if (new Date - global.db.data.users[m.sender].lastfishing > 28800) {
+                                  if (new Date - global.db.data.users[m.sender].lastmancingeasy > 28800) {
                                   if (global.db.data.users[m.sender].pancingan > 3) {
                                   if (global.db.data.users[m.sender].umpan > 199) {
                                   let randomakur1 = `${Math.floor(Math.random() * 100)}`
@@ -276,17 +276,17 @@ let handler = async (m, { conn,usedPrefix, command, text, args }) => {
                                  setTimeout(() => {
                                  m.reply('_Sedang Memancing..._')
                                  }, 0) 
-                                 user.lastfishing = new Date * 1
+                                 user.lastmancingeasy = new Date * 1
                                  } else conn.reply(m.chat, 'Minimal umpan kamu *200* untuk memancing level hard', m)
                             } else conn.reply(m.chat, 'Minimal pancingan kamu *Level 4* untuk memancing level hard', m)
                        } else conn.reply(m.chat, `*Sepertinya Anda Sudah Lelah*\n*Silahkan Istirahat Sejenak Sekitar ${timerh}*\n*Untuk Bisa Melanjutkan Memancing Lagi*`, m)
                  break
 	          case 'extreme':
-                                  let __timere = (new Date - global.db.data.users[m.sender].lastfishing)
+                                  let __timere = (new Date - global.db.data.users[m.sender].lastmancingeasy)
                                   let _timere = (28800 - __timere)
                                   let timere = clockString(_timere) 
                                   if (pancingan == 0 || umpan == 0) return m.reply('*Kamu belum memiliki Pancingan dan Umpan, Silahkan beli dulu..*')
-                                  if (new Date - global.db.data.users[m.sender].lastfishing > 28800) {
+                                  if (new Date - global.db.data.users[m.sender].lastmancingeasy > 28800) {
                                   if (global.db.data.users[m.sender].pancingan > 4) {
                                   if (global.db.data.users[m.sender].umpan > 249) {
                                   let randomakue1 = `${Math.floor(Math.random() * 500)}`
@@ -368,7 +368,7 @@ let handler = async (m, { conn,usedPrefix, command, text, args }) => {
                                  setTimeout(() => {
                                  m.reply('_Sedang Memancing..._')
                                  }, 0) 
-                                 user.lastfishing = new Date * 1
+                                 user.lastmancingeasy = new Date * 1
                                  } else conn.reply(m.chat, 'Minimal umpan kamu *250* untuk memancing level extreme', m)
                             } else conn.reply(m.chat, 'Minimal pancingan kamu *Level 5* untuk memancing level extreme', m)
                        } else conn.reply(m.chat, `*Sepertinya Anda Sudah Lelah*\n*Silahkan Istirahat Sejenak Sekitar ${timere}*\n*Untuk Bisa Melanjutkan Memancing Lagi*`, m)
@@ -379,16 +379,16 @@ let handler = async (m, { conn,usedPrefix, command, text, args }) => {
 }
 
 handler.help = ['pancing <type>']
-handler.tags = ['rpg']
+handler.tags = ['game']
 handler.command = /^(pancing)$/i
 handler.register = true
 handler.limit = false
 
 export default handler
-
 function clockString(ms) {
-  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
-  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
-  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [h, ' H ', m, ' M ', s, ' S '].map(v => v.toString().padStart(2, 0)).join('')
+  let h = Math.floor(ms / 3600000)
+  let m = Math.floor(ms / 60000) % 60
+  let s = Math.floor(ms / 1000) % 60
+  console.log({ms,h,m,s})
+  return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')
 }
