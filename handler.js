@@ -78,6 +78,8 @@ export async function handler(chatUpdate) {
 
                 if (!isNumber(user.money))
                     user.money = 0
+                if (!isNumber(user.stamina))
+                    user.stamina = 100
                 if (!isNumber(user.atm))
                     user.atm = 0
                 if (!isNumber(user.fullatm))
@@ -229,6 +231,7 @@ export async function handler(chatUpdate) {
                     atm: 0,
                     fullatm: 0,
                     health: 100,
+                    stamina: 100,
                     potion: 10,
                     trash: 0,
                     wood: 0,
