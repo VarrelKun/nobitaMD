@@ -30,7 +30,7 @@ global.APIKeys = { // APIKey Here
   'https://pencarikode.xyz': 'pais',
   'https://melcanz.com': 'ZZBk7EBb',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll',
-  'https://gopalasu.herokuapp.com/docs': 'gopalasu',
+  'https://gopalasu.herokuapp.com': 'gopalasu',
   'https://api-alphabot.herokuapp.com': 'N7axnIq3'
 }
 
