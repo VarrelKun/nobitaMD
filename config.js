@@ -19,7 +19,7 @@ global.APIs = { // API Prefix
   melcanz: 'https://melcanz.com',
   pencarikode: 'https://pencarikode.xyz',
   LeysCoder: 'https://leyscoders-api.herokuapp.com',
-  restapi: 'https://x-restapi.herokuapp.com',
+  restapi: 'https://gopalasu.herokuapp.com',
   alphabot: 'https://api-alphabot.herokuapp.com'
 }
 global.APIKeys = { // APIKey Here
@@ -30,7 +30,7 @@ global.APIKeys = { // APIKey Here
   'https://pencarikode.xyz': 'pais',
   'https://melcanz.com': 'ZZBk7EBb',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll',
-  'https://x-restapi.herokuapp.com': 'BETA',
+  'https://gopalasu.herokuapp.com/docs': 'gopalasu',
   'https://api-alphabot.herokuapp.com': 'N7axnIq3'
 }
 
