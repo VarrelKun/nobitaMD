@@ -95,7 +95,8 @@ let handler = async (m, { conn,usedPrefix, command, text, args }) => {
                                  user.lastmancingeasy = new Date * 1
                                  } else conn.reply(m.chat, 'Minimal umpan kamu *100* untuk memancing level mudah', m)
                             } else conn.reply(m.chat, 'Minimal pancingan kamu *Level 2* untuk memancing level mudah', m)
-                       } else conn.reply(m.chat, `*Sepertinya Anda Sudah Lelah*\n*Silahkan Istirahat Sejenak Sekitar ${timers}*\n*Untuk Bisa Melanjutkan Memancing Lagi*`, m)
+                       } else conn.reply(m.chat, `*Sepertinya Anda Sudah Lelah*\n*Silahkan Istirahat Sejenak Sekitar ${timers.toTimeString()}*
+`.trim())*\n*Untuk Bisa Melanjutkan Memancing Lagi*`, m)
                  break
 	          case 'normal':
                                   let __timerl = (new Date - global.db.data.users[m.sender].lastmancingeasy)
@@ -187,7 +188,8 @@ let handler = async (m, { conn,usedPrefix, command, text, args }) => {
                                  user.lastmancingeasy = new Date * 1
                                  } else conn.reply(m.chat, 'Minimal umpan kamu *150* untuk memancing level normal', m)
                             } else conn.reply(m.chat, 'Minimal pancingan kamu *Level 3* untuk memancing level normal', m)
-                       } else conn.reply(m.chat, `*Sepertinya Anda Sudah Lelah*\n*Silahkan Istirahat Sejenak Sekitar ${timerl}*\n*Untuk Bisa Melanjutkan Memancing Lagi*`, m)
+                       } else conn.reply(m.chat, `*Sepertinya Anda Sudah Lelah*\n*Silahkan Istirahat Sejenak Sekitar ${timers.toTimeString()}*
+`.trim())*\n*Untuk Bisa Melanjutkan Memancing Lagi*`, m)
                  break 
 	          case 'hard':
                                   let __timerh = (new Date - global.db.data.users[m.sender].lastmancingeasy)
@@ -379,10 +381,10 @@ let handler = async (m, { conn,usedPrefix, command, text, args }) => {
 }
 
 handler.help = ['pancing <type>']
-handler.tags = ['game']
+handler.tags = ['rpg']
 handler.command = /^(pancing)$/i
 handler.register = true
-handler.limit = true
+handler.limit = false
 
 export default handler
 
