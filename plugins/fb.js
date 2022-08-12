@@ -22,7 +22,7 @@ let fetch = require('node-fetch')
 
 let handler = async (m, { conn, args }) => {
   if (!args[0]) throw 'Uhm...url nya mana?'
-  let res = await fetch(global.API('neoxr', '/api/fb', { url: args[0] }, 'apikey'))
+  let res = await fetch(global.API('https://api.xteam.xyz/dl/fbv2?url=${args[0]}&APIKEY=NezukoTachibana281207'))
   if (res.status !== 200) {
     res.text()
     throw res.status
