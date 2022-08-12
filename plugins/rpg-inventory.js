@@ -14,6 +14,10 @@ const inventory = {
   },
   items: {
     potion: true,
+    fish: true,
+    crab: true,
+    shrimp: true,
+    lobster: true,
     trash: true,
     wood: true,
     rock: true,
@@ -30,12 +34,6 @@ const inventory = {
     pickaxedurability: true,
     fishingroddurability: true,
     armordurability: true,
-  },
-  foods: {
-  	fish: true,
-      crab: true,
-      shrimp: true,
-      lobster: true,
    },
   tools: {
     armor: {
@@ -137,10 +135,6 @@ ${dura}` : ''}${items ? `
 ${items}
 ➔ ᴛᴏᴛᴀʟ ɪᴛᴇᴍs: ${Object.keys(inventory.items).map(v => user[v]).reduce((a, b) => a + b, 0)} Items` : ''}${crates ? `
 
-
-*───── ғᴏᴏᴅs ─────*
-${items}
-➔ ᴛᴏᴛᴀʟ ɪᴛᴇᴍs: ${Object.keys(inventory.foods).map(v => user[v]).reduce((a, b) => a + b, 0)} Foods` : ''}${foods ? `
 
 
 *───── ᴄʀᴀᴛᴇs ─────*
