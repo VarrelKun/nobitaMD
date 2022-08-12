@@ -1,11 +1,16 @@
-const rewards = {
-  exp: 9999,
-  money: 4999,
-  potion: 5,
-}
-const cooldown = 86400000
+const cooldown = 20000
 let handler = async (m,{ conn} ) => {
   let user = global.db.data.users[m.sender]
+  let timers = (cooldown - (new Date - user.lastfishing))
+  if (user.stamina < 70) return m.reply(`
+Requires at least 70 ðŸ”‹Stamina for the fishing!!
+please buy ðŸ”‹Stamina first by typing *${usedPrefix}buy potion <quantity>*,
+and type *${usedPrefix}heal <quantity>* to use potions
+`.trim())
+     if (user.fishingrod  == 0) return m.reply('Mau mancing ga punya alat pancingðŸŽ£')
+    if (new Date - user.lastfishing <= cooldown) return m.reply(`
+You're already fishing!!, please wait *Ã°Å¸â€¢Â${timers.toTimeString()}*
+`.trim())
   if (new Date - user.lastfishing < cooldown) throw `You have already claimed this daily claim!, wait for *${((user.lastfishing + cooldown) - new Date()).toTimeString()}*`
   let text = ''
   for (let reward of Object.keys(rewards)) {
