@@ -379,7 +379,7 @@ let handler = async (m, { conn,usedPrefix, command, text, args }) => {
 }
 
 handler.help = ['pancing <type>']
-handler.tags = ['game']
+handler.tags = ['rpg']
 handler.command = /^(pancing)$/i
 handler.register = true
 handler.limit = false
