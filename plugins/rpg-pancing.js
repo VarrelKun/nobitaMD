@@ -7,10 +7,10 @@ let handler = async (m, { conn,usedPrefix, command, text, args }) => {
         switch (type) {
 	          case 'easy':
                                   let __timers = (new Date - global.db.data.users[m.sender].lastmancingeasy)
-                                  let _timers = (28800000 - __timers)
+                                  let _timers = (28800 - __timers)
                                   let timers = clockString(_timers) 
                                   if (pancingan == 0 || umpan == 0) return m.reply('*Kamu belum memiliki Pancingan dan Umpan, Silahkan beli dulu..*')
-                                  if (new Date - global.db.data.users[m.sender].lastmancingeasy > 28800000) {
+                                  if (new Date - global.db.data.users[m.sender].lastmancingeasy > 28800) {
                                   if (global.db.data.users[m.sender].pancingan > 1) {
                                   if (global.db.data.users[m.sender].umpan > 99) {
                                   let randomaku1 = `${Math.floor(Math.random() * 10)}`
