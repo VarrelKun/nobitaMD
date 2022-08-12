@@ -6,6 +6,7 @@ import adventure from './rpg-adventure.js'
 const inventory = {
   others: {
     health: true,
+    stamina: true,
     money: true,
     exp: true,
     limit: true,
@@ -30,6 +31,12 @@ const inventory = {
     fishingroddurability: true,
     armordurability: true,
   },
+  foods: {
+  	fish: true,
+      crab: true,
+      shrimp: true,
+      lobster: true,
+   },
   tools: {
     armor: {
       '0': '❌',
@@ -129,6 +136,11 @@ ${dura}` : ''}${items ? `
 *───── ɪᴛᴇᴍs ─────*
 ${items}
 ➔ ᴛᴏᴛᴀʟ ɪᴛᴇᴍs: ${Object.keys(inventory.items).map(v => user[v]).reduce((a, b) => a + b, 0)} Items` : ''}${crates ? `
+
+
+*───── ғᴏᴏᴅs ─────*
+${items}
+➔ ᴛᴏᴛᴀʟ ɪᴛᴇᴍs: ${Object.keys(inventory.foods).map(v => user[v]).reduce((a, b) => a + b, 0)} Foods` : ''}${foods ? `
 
 
 *───── ᴄʀᴀᴛᴇs ─────*
