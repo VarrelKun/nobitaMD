@@ -35,3 +35,44 @@ handler.command = /^(mancing|fishing)$/i
 handler.cooldown = cooldown
 
 export default handler
+
+function reward(user = {}) {
+    let rewards = {
+        reward: {
+            money: 201,
+            exp: 301,
+            trash: 101,
+            potion: 2,
+            rock: 2,
+            wood: 2,
+            string: 2,
+            common: 2 * (user.dog && (user.dog > 2 ? 2 : user.dog) * 1.2 || 1),
+            uncommon: [0, 0, 0, 1, 0].concat(
+                new Array(5 - (
+                    (user.dog > 2 && user.dog < 6 && user.dog) || (user.dog > 5 && 5) || 2
+                )).fill(0)
+            ),
+            mythic: [0, 0, 0, 0, 0, 1, 0, 0, 0].concat(
+                new Array(8 - (
+                    (user.dog > 5 && user.dog < 8 && user.dog) || (user.dog > 7 && 8) || 3
+                )).fill(0)
+            ),
+            legendary: [0, 0, 0, 0, 0, 0, 0, 1, 0, 0].concat(
+                new Array(10 - (
+                    (user.dog > 8 && user.dog) || 4
+                )).fill(0)
+            ),
+            iron: [0, 0, 0, 1, 0, 0],
+            gold: [0, 0, 0, 0, 0, 1, 0],
+            diamond: [0, 0, 0, 0, 0, 0, 1, 0].concat(
+                new Array(5 - (
+                    (user.fox < 6 && user.fox) || (user.fox > 5 && 5) || 0
+                )).fill(0)
+            ),
+        },
+        lost: {
+            health: 101 - user.cat * 4
+        }
+    }
+    return rewards
+}
