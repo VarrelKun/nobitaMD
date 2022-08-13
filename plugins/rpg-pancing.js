@@ -65,7 +65,7 @@ function reward(user = {}) {
             ),
         },
         lost: {
-            health: 101 - user.cat * 4
+            stamina: 101 - user.cat * 4
         }
     }
     return rewards
