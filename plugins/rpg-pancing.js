@@ -1,17 +1,17 @@
 const cooldown = 3000
 let handler = async (m, { usedPrefix }) => {
     let user = global.db.data.users[m.sender]
-    let timers = (cooldown - (new Date - user.lastadventure))
+    let timers = (cooldown - (new Date - user.lastfishing))
     if (user.health < 80) return m.reply(`
-Requires at least 80 â¤ï¸Healths for the adventure!!
-please buy â¤ï¸Healths first by typing *${usedPrefix}buy potion <quantity>*,
+Requires at least 80 🔋Stamina for the adventure!!
+please buy 🔋Stamina first by typing *${usedPrefix}buy potion <quantity>*,
 and type *${usedPrefix}heal <quantity>* to use potions
 `.trim())
-    if (new Date - user.lastadventure <= cooldown) return m.reply(`
+    if (new Date - user.lastfishing <= cooldown) return m.reply(`
 You're already adventure!!, please wait *ðŸ•${timers.toTimeString()}*
 `.trim())
     const rewards = reward(user)
-    let text = 'you\'ve been adventure and lost'
+    let text = 'you\'ve been fishing and lost'
     for (const lost in rewards.lost) if (user[lost]) {
         const total = rewards.lost[lost].getRandom()
         user[lost] -= total * 1
@@ -24,7 +24,7 @@ You're already adventure!!, please wait *ðŸ•${timers.toTimeString()}*
         if (total) text += `\n*${global.rpg.emoticon(rewardItem)}${rewardItem}:* ${total}`
     }
     m.reply(text.trim())
-    user.lastadventure = new Date * 1
+    user.lastfishing = new Date * 1
 }
 handler.help = ['fishing']
 handler.tags = ['rpg']
@@ -40,7 +40,7 @@ function reward(user = {}) {
         reward: {
             fish: 90,
             exp: 301,
-            trash: 101,
+            trash: 201,
             potion: 2,
             shrimp: 10,
             crab: 5,
