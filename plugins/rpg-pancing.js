@@ -11,6 +11,13 @@ and type *${usedPrefix}heal <quantity>* to use potions
     if (new Date - user.lastfishing <= cooldown) return m.reply(`
 You're already fishing!!, please wait *Ã°Å¸â€¢Â${timers.toTimeString()}*
 `.trim())
+const rewards = reward(user)
+    let text = 'you\'ve been fishing and lost'
+    for (const lost in rewards.lost) if (user[lost]) {
+        const total = rewards.lost[lost].getRandom()
+        user[lost] -= total * 1
+        if (total) text += `\n*${global.rpg.emoticon(lost)}${lost}:* ${total}`
+    }
   if (new Date - user.lastfishing < cooldown) throw `You have already claimed this daily claim!, wait for *${((user.lastfishing + cooldown) - new Date()).toTimeString()}*`
   let text = ''
   for (let reward of Object.keys(rewards)) {
