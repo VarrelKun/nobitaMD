@@ -2,7 +2,7 @@ const cooldown = 3000
 let handler = async (m, { usedPrefix }) => {
     let user = global.db.data.users[m.sender]
     let timers = (cooldown - (new Date - user.lastfishing))
-    if (user.health < 80) return m.reply(`
+    if (user.stamina < 80) return m.reply(`
 Requires at least 80 🔋Stamina for the adventure!!
 please buy 🔋Stamina first by typing *${usedPrefix}buy potion <quantity>*,
 and type *${usedPrefix}heal <quantity>* to use potions
