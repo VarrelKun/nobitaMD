@@ -7,6 +7,7 @@ Requires at least 80 🔋Stamina for the adventure!!
 please buy 🔋Stamina first by typing *${usedPrefix}buy potion <quantity>*,
 and type *${usedPrefix}boost <quantity>* to use potions
 `.trim())
+    if (user.fishingrod == 0) return m.reply('Mau fishing ga punya fishingrod')
     if (new Date - user.lastfishing <= cooldown) return m.reply(`
 You're already adventure!!, please wait *ðŸ•${timers.toTimeString()}*
 `.trim())
