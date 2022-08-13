@@ -26,7 +26,7 @@ const rewards = reward(user)
     text += `*+${rewards[reward]}* ${global.rpg.emoticon(reward)}${reward}\n`
   }
   conn.sendButton(m.chat,'*––––––『 DAILY 』––––––*', text.trim(), null, [['Inventory', '.inv'], ['Weekly', '.weekly']],m)
-  user.lastclaim = new Date * 1
+  user.lastfishing = new Date * 1
 }
 handler.help = ['mancing', 'fishing']
 handler.tags = ['rpg']
