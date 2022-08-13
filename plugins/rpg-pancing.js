@@ -1,4 +1,4 @@
-const cooldown = 300000
+const cooldown = 3000
 let handler = async (m, { usedPrefix }) => {
     let user = global.db.data.users[m.sender]
     let timers = (cooldown - (new Date - user.lastadventure))
@@ -38,13 +38,13 @@ export default handler
 function reward(user = {}) {
     let rewards = {
         reward: {
-            money: 201,
+            fish: 90,
             exp: 301,
             trash: 101,
             potion: 2,
-            rock: 2,
-            wood: 2,
-            string: 2,
+            shrimp: 10,
+            crab: 5,
+            lobster: 2,
             common: 2 * (user.dog && (user.dog > 2 ? 2 : user.dog) * 1.2 || 1),
             uncommon: [0, 0, 0, 1, 0].concat(
                 new Array(5 - (
@@ -54,11 +54,6 @@ function reward(user = {}) {
             mythic: [0, 0, 0, 0, 0, 1, 0, 0, 0].concat(
                 new Array(8 - (
                     (user.dog > 5 && user.dog < 8 && user.dog) || (user.dog > 7 && 8) || 3
-                )).fill(0)
-            ),
-            legendary: [0, 0, 0, 0, 0, 0, 0, 1, 0, 0].concat(
-                new Array(10 - (
-                    (user.dog > 8 && user.dog) || 4
                 )).fill(0)
             ),
             iron: [0, 0, 0, 1, 0, 0],
