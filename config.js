@@ -191,7 +191,6 @@ global.rpg = {
       money: '💹',
       bank: '🏦',
       potion: '🥤',
-      fish: '🐟',
       shrimp: '🦐',
       crab: '🦀',
       lobster: '🦞',
