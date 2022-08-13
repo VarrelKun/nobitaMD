@@ -90,6 +90,14 @@ export async function handler(chatUpdate) {
                     user.health = 100
                 if (!isNumber(user.potion))
                     user.potion = 0
+                if (!isNumber(user.fish))
+                    user.fish = 0
+                if (!isNumber(user.shrimp))
+                    user.shrimp = 0
+                if (!isNumber(user.crab))
+                    user.crab = 0
+                if (!isNumber(user.lobster))
+                    user.lobster = 0
                 if (!isNumber(user.trash))
                     user.trash = 0
                 if (!isNumber(user.wood))
@@ -233,6 +241,10 @@ export async function handler(chatUpdate) {
                     health: 100,
                     stamina: 100,
                     potion: 10,
+                    fish: 0,
+                    shrimp: 0,
+                    crab: 0,
+                    lobster: 0,
                     trash: 0,
                     wood: 0,
                     rock: 0,
