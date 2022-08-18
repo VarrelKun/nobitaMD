@@ -206,7 +206,9 @@ export async function handler(chatUpdate) {
                     user.lastbunuhi = 0
                 if (!isNumber(user.lastcode))
                     user.lastcode = 0
-                
+                if (!isNumber(user.lastngojek))
+                    user.lastngojek = 0
+                                
                     
                 if (!isNumber(user.premium))
                     user.premium = false
@@ -297,6 +299,7 @@ export async function handler(chatUpdate) {
                     lastmonthly: 0,
                     lastbunga: 0,
                     lastcode: 0,
+                    lastngojek: 0,
                     
                     premium: false,
                     premiumTime: 0,
