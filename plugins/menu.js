@@ -560,6 +560,7 @@ function pickRandom(list) {
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '🔥😤 *MAKE DOANG KAGA DONASI* 😤🔥', 'status@broadcast')
 
 function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
