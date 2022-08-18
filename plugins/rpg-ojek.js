@@ -3,7 +3,7 @@ let handler = async (m, { conn }) => {
     let __timers = (new Date - global.db.data.users[m.sender].lastngojek)
     let _timers = (300000 - __timers)
     let order = global.db.data.users[m.sender].ojekk
-    let timers = {timers.toTimeString()}.trim())
+    let timers = {timers.toTimeString()}`.trim())
 let name = conn.getName(m.sender)
     let user = global.db.data.users[m.sender]
     
