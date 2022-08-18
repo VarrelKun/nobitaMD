@@ -3,6 +3,9 @@ import fetch from 'node-fetch'
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 let info = `Nani? (・o・)`
 
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '🔥😇 *PAAN COEG :Vv* 😇🔥', 'status@broadcast')
+
+
 let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 /*const message = {
             document: { url:thumb },
@@ -45,7 +48,7 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
         return await conn.sendMessage(m.chat, message)*/
 conn.reply(m.chat, info, m, { contextInfo: { externalAdReply: {title: global.wm, body: 'Yaw? ada apa kak?', sourceUrl: sgc, thumbnail: fs.readFileSync('./thumbnail.jpg')  }}})
 }
-handler.customPrefix = /^(tes|tess|test)$/i
+handler.customPrefix = /^(tes|tess|test|bot|p|hi)$/i
 handler.command = new RegExp
 
 export default handler
