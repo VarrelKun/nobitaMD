@@ -1,5 +1,8 @@
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 let text = `
+
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '🔥😇 *DONASINYA TUAN!* 😇🔥', 'status@broadcast')
+
 ┌─「 Donasi • Pulsa 」
 │ • *Xl:* [${global.ppulsa}]
 ❏────
