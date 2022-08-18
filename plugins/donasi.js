@@ -9,8 +9,6 @@ let text = `
 │ • *Dana:* [${global.pdana}]
 ❏────
 `
-conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '🔥😇 *DONASINYA TUAN!* 😇🔥', 'status@broadcast')
-
 const templateButtons = [
     {index: 1, urlButton: {displayText: '✨ Discord', url: psaweria}},
     {index: 2, urlButton: {displayText: '📷 Instagram', url: sig}},
