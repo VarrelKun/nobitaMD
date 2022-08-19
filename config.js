@@ -43,11 +43,11 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
     
 /*============== SOCIAL ==============*/
 
-// kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
-global.sig = 'https://instagram.com/fuze.page'
+// Wajib diisi ya kak!, kalo ga punya biarin aja, biar ada creditsnya :v
+global.sig = 'https://www.instagram.com/_lucxfvr'
 global.sgh = 'https://github.com/VarrelKun'
-global.sgc = 'https://FuzePage.my.id'
-global.sdc = 'https://discord.io/FuzePage'
+global.sgc = 'https://chat.whatsapp.com/CfNQ31ONMbfAduYtVYyci3'
+global.sdc = " "
 global.snh = 'https://FuzePage.my.id'
 
 /*============== PAYMENT ==============*/
@@ -62,15 +62,15 @@ global.psaweria = 'https://discord.io/FuzePage'
 global.nomorbot = '6287739946665'
 global.nomorown = '6285954184111'
 global.namebot = 'FUZEBOT'
-global.nameown = 'GOPALASU'
+global.nameown = 'SIJEMBOT'
 
 
 /*============== STAFF ==============*/
 global.owner = [
   ['6285954184111'],
   ['6285954184111'],
-  ['6285954184111'],
-  ['6285954184111', 'GOPALASU', true]
+  ['18126338970'],
+  ['6285954184111', 'SIJEMBOT', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -99,28 +99,28 @@ global.APIs = { // API Prefix
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
-  'https://api.xteam.xyz': 'NezukoTachibana281207',
-  'https://anabotofc.herokuapp.com/': 'AnaBot',
-  'https://api.lolhuman.xyz': 'a70fe5fb01ea65b6bb350009',
+  'https://api.xteam.xyz': 'APIKEY',
+  'https://anabotofc.herokuapp.com/': 'APIKEY',
+  'https://api.lolhuman.xyz': 'APIKEY',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.me': 'apivinz',
   'https://pencarikode.xyz': 'pais',
-  'https://melcanz.com': 'melcantik',
+  'https://melcanz.com': 'APIKEY',
   'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://server-api-rey.herokuapp.com': 'apirey',
-  'https://botstyle-api.herokuapp.com': 'Apikeymu',
+  'https://botstyle-api.herokuapp.com': 'APIKEY',
   'https://hardianto.xyz': 'hardianto',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
 // Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 
 /*============== WATERMARK ==============*/
-global.wm = '「 Fuze Page 」' //Main Watermark
-global.wm2 = 'FUZE PAGE'
-global.wm3 = 'FUZEBOT'
+global.wm = '                「 FUZEBOT 」' //Main Watermark
+global.wm2 = 'FUZEBOT'
+global.wm3 = '⫹⫺FUZEBOT'
 global.botdate = `⫹⫺ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = '✯✯FUZEBOT✯✯'
+global.titlebot = '🔥┊ FUZE Whatsapp ʙᴏᴛ'
 global.author = global.wm
 
 
@@ -174,7 +174,7 @@ global.hsquere = ['⛶','❏','⫹⫺']
 
 /*============== STICKER WM ==============*/
 global.stickpack = '.'
-global.stickauth = `☂︎FUZEBOT\n⫹⫺ Whatsapp BOT\nwa.me/${global.nomorbot}`
+global.stickauth = `FUZEBOT`
 
 global.multiplier = 38 // The higher, The harder levelup
 
@@ -186,14 +186,10 @@ global.rpg = {
       level: '📊',
       limit: '🎫',
       health: '❤️',
-      stamina: '🔋',
       exp: '✨',
       money: '💹',
       bank: '🏦',
       potion: '🥤',
-      shrimp: '🦐',
-      crab: '🦀',
-      lobster: '🦞',
       diamond: '💎',
       common: '📦',
       uncommon: '🛍️',
